@@ -27,8 +27,7 @@ class _MovieListScreenState extends State<MovieListScreen> {
       _isLoading = true;
     });
 
-    final String apiKey =
-        '9a72cc7c15556a22f583079f352620df'; // Replace with your API key
+    final String apiKey = 'YOUR_API_KEY'; // Replace with your API key
     final String url = _searchQuery.isEmpty
         ? 'https://api.themoviedb.org/3/movie/popular?api_key=$apiKey'
         : 'https://api.themoviedb.org/3/search/movie?api_key=$apiKey&query=$_searchQuery';
